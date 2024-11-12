@@ -1,5 +1,5 @@
-# TechFolio Hub
-TechFolio Mobile App.
+# MailEase
+MailEase Mobile App.
 
 # Features
 * Share Projects
@@ -29,4 +29,3 @@ TechFolio Mobile App.
 
 # Tabs Screen
 <img src="assets/images/screenshot/tabs.png">  
-    
