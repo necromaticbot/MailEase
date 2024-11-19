@@ -1,10 +1,10 @@
 import { View, Text, Image, ScrollView } from 'react-native'
 import React, { useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { images } from '../../constants'
-import FormField from '../../components/FormField'
-import CustomButton from '../../components/CustomButton'
-import { Link } from 'expo-router'
+import { images } from '../../assets/constants'
+import FormField from '../Components/FormField'
+import CustomButton from '../Components/CustomButton'
+import { Link, router } from 'expo-router'
 
 const SignUp = () => {
   const [form, setForm]=useState({
@@ -22,7 +22,7 @@ const SignUp = () => {
                 resizemode='contain'
                 className="w-[200px] h-[30px] "
               />
-              <Text className="text-2xl text-white mt-5 font-u_regular ">Sign up to  TechFolioHub</Text>
+              <Text className="text-2xl text-white mt-5 font-u_regular ">Sign up to MailEase</Text>
               <FormField
                   title="Username"
                   value={form.username}
@@ -44,19 +44,18 @@ const SignUp = () => {
               />
               <CustomButton
                   title="Sign In"
-                  handlePress={submit}
+                  handlePress={()=> router.push('/SignIn')}
                   containerStyles="w-full mt-7"
-                  isLoading={isSubmitting}
               />
         <View className="flex justify-center pt-5 flex-row      gap-2">
             <Text className="text-lg text-gray-100 font-pregular">
-              Don't have an account?
+              Already have an account?
             </Text>  
             <Link
-              href="/sign-up"
+              href="/SignIn"
               className="text-lg font-u_bold text-orange-600 "
             >
-              Signup
+              SignIn
             </Link>
           </View>
           </View>

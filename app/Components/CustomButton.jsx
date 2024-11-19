@@ -6,7 +6,7 @@ const CustomButton = ({ title, handlePress, containerStyles, isLoading }) => {
   return (
     <TouchableOpacity
       onPress={handlePress}
-      style={[{ backgroundColor: '#FF6A00', paddingVertical: 12, borderRadius: 8 }, containerStyles]}
+      style={[{ backgroundColor: '#FF6A00', paddingVertical: 12, borderRadius: 8, width: '50%', marginTop: 15 }, containerStyles]}
       disabled={isLoading}
     >
       {isLoading ? (

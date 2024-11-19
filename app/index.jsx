@@ -5,8 +5,8 @@ import { Link } from 'expo-router';
 export default function App() {
   return (
     <View className="flex-1 items-center justify-center bg-slate-500">
-      <Text className="text-3xl font-u_regular">Welcome, MailEase</Text>
-      <Link href="/home">
+      <Text className="text-3xl font-u_regular">Welcome to MailEase</Text>
+      <Link href="/SignUp">
       <Text>Go to Home</Text>
       </Link>
       <StatusBar style="auto" />
