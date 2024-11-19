@@ -14,7 +14,7 @@ const Profile = () => {
         <View className ='flex-1 p-4'>
             <Text className ='text-xl font-bold mb-4'>Profile</Text>
             <Text className ='font-bold mb-2'>Name:</Text>
-            <TextInput
+            <TextInput                                              
                 className = 'h-10 border border-gray-400 mb-3 p-2 rounded'
                 value={name}
                 onChangeText={setName}
